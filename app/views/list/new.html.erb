@@ -1,0 +1,8 @@
+<h1>Nova lista</h1>
+
+<%= form_for @new_list, url: new_list_path do |list| %>
+	<%= list.label :name, "Nome da lista" %>
+	<%= list.text_field :name %>
+
+	<%= list.submit "Criar lista" %>
+<% end %>

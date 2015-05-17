@@ -1,0 +1,6 @@
+<h1><%= @list.name %></h1>
+<%= link_to "Novo item", new_item_path(@list.id) %>
+
+<% @items.each do |item| %>
+	<p><%= item.description %></p>
+<% end %>

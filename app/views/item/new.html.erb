@@ -1,0 +1,7 @@
+<h1>Novo item</h1>
+<%= form_for @new_item, url: new_item_path(@list.id) do |item| %>
+	<%= item.label :description, "Descriçao" %>
+	<%= item.text_field :description %>
+
+	<%= item.submit "Adicionar item" %>
+<% end %>
