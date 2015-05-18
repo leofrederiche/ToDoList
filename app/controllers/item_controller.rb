@@ -10,7 +10,7 @@ class ItemController < ApplicationController
 		@new_item = Item.create(item_params)
 		@new_item.list_id = @list.id
 		if @new_item.save
-			redirect_to show_list_path(@list.id)
+			redirect_to root_path
 		else
 			render :new
 		end
