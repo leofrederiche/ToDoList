@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/lista/novo", to: "list#new", as: :new_list
   post "/lista/novo", to: "list#create", as: false
   get "/lista/:id", to: "list#show", as: :show_list
+  delete "/lista/delete/:id", to: "list#delete", as: :delete_list
 
   get "/item/novo/:id", to: "item#new", as: :new_item
   post "/item/novo/:id", to: "item#create", as: :false

@@ -1,14 +1,17 @@
 <h1>Lista de afazeres</h1>
 
 <% @lists.each do |list| %>
-	<div class="list">
-	<p><%= link_to "#{list.name}", show_list_path(list.id), id: "title" %></p>
-	<%= link_to "+", new_item_path(list.id), id: "add" %>
-	
+	<div class="list color_<%= color_list %>">
+		<p><%= link_to "#{list.name}", show_list_path(list.id), id: "title" %></p>
+		<%= link_to "", new_item_path(list.id), id: "add" %>
+		<%= link_to "", delete_list_path(list.id), id: "delete", method: :delete %>
+
 		<% list.items.each do |items| %>
 			<ul>
 				<li><%= items.description %></li>
 			</ul>
 		<% end %>
 	</div>
+
+
 <% end %>
