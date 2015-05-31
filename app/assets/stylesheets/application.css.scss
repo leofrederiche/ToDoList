@@ -15,29 +15,33 @@
  */
 
  body{
- 	background-color: cyan !important;
+ 	padding: 10px;
  }
 
 nav{
-	background-color: purple;
+	text-align: center;
 	margin: 0;
-	width: 100%;
+	width: 101.7%;
 	height: 50px;
-
+	background-color: gray;
+	margin: -10px;
 }
 
 nav a{
 	text-decoration: none;
-	color: white;
 	font-weight: bold;
 	font-size: 15px;
-	padding: 20px;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+	top: 0px;
+	transition: 0.3s;
+	color: white;
 }
 
 
 nav a:hover{
-	color: white;
-	background-color: rgba(255,255,255,0.3);
+	color: rgba(255,255,255,0.5);
 	text-decoration: none;
 }
 
@@ -57,6 +61,9 @@ nav li{
 	padding-left: 0px;
 	padding-top: 30px;
 	min-height: 200px;
+	max-width: 400px;
+	min-width: 200px;
+
 	color: white;
 	top: 50px;
 }
@@ -78,16 +85,30 @@ nav li{
 	margin-right: 10px;
 }
 
-.color_blue #add{
-	font-weight: bold;
+.gray{
+	color: white;
+	background-color: gray;
+}
+
+.lightgray{
+	color: black;
+	background-color: lightgray;
+}
+
+.lightgray #title{
+	color: black;
+}
+
+
+/* add & delete */
+
+.gray #add{
 	position: relative;
 	float: right;
-	margin-right: -55px;
-	margin-top: -70px;
-	font-size: 30px;
-	width: 30px;
-	height: 30px;
-	text-align: center;
+	margin-right: -38px;
+	margin-top: -72px;
+	width: 20px;
+	height: 20px;
 	background-image: image-url("add20.png");
 	background-size: cover;
 	filter: invert(100%);
@@ -96,72 +117,47 @@ nav li{
 	-webkit-filter: invert(100%);
 }
 
-.color_green #add{
-	font-weight: bold;
+.lightgray #add{
 	position: relative;
 	float: right;
-	margin-right: -55px;
-	margin-top: -70px;
-	font-size: 30px;
-	width: 30px;
-	height: 30px;
-	text-align: center;
+	margin-right: -38px;
+	margin-top: -72px;
+	width: 20px;
+	height: 20px;
 	background-image: image-url("add20.png");
 	background-size: cover;
 }
 
-.color_blue #delete{
-	font-weight: bold;
+.gray #delete{
 	position: relative;
 	float: right;
-	margin-right: -53px;
-	margin-top: -30px;
-	font-size: 30px;
-	width: 30px;
-	height: 30px;
-	text-align: center;
+	margin-right: -65px;
+	margin-top: -73px;
+	width: 20px;
+	height: 20px;
 	background-image: image-url("delete96.png");
 	background-size: cover;
 	filter: invert(100%);
 	-ms-filter: invert(100%);
 	-moz-filter: invert(100%);
-	-webkit-filter: invert(100%);
+	-webkit-filter: invert(100%);	
 }
 
-.color_green #delete{
-	font-weight: bold;
+.lightgray #delete{
 	position: relative;
 	float: right;
-	margin-right: -53px;
-	margin-top: -30px;
-	font-size: 30px;
-	width: 30px;
-	height: 30px;
-	text-align: center;
+	margin-right: -65px;
+	margin-top: -73px;
+	width: 20px;
+	height: 20px;
 	background-image: image-url("delete96.png");
 	background-size: cover;
 }
 
-
-
-.color_blue{
-	background-color: #0000ee;
-}
-
-.color_green{
-	background-color: #00ee00;
-	color: black;
-}
-
-.color_green #title{
-	color: black;
-	font-weight: bold;
-}
-
-#add{
-	opacity: 0.5;
-}
-
-#delete{
-	opacity: 0.5;
+.delete{
+	position: relative;
+	width: 15px;
+	float: right;
+	left: 50px;
+	top: 2px;
 }

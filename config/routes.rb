@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   get "/item/novo/:id", to: "item#new", as: :new_item
   post "/item/novo/:id", to: "item#create", as: :false
+  delete "/item/delete/:id", to: "item#destroy", as: :delete_item
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,11 +1,11 @@
 module ApplicationHelper
 
 	def color_list
-		@color = rand(1..3);
+		@color = rand(1..2);
 		if @color == 1
-			"green"
+			"gray"
 		else
-			"blue"
+			"lightgray"
 		end
 	end
 
