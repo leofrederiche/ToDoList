@@ -12,8 +12,7 @@
 			<li>
 				<%= item.description %> 
 
-				<%= link_to delete_item_path(item.id), method: :delete, remote: true, 
-					id: "remote_item_#{item.id}" do |delete|  %>
+				<%= link_to delete_item_path(item.id), method: :delete do |delete|  %>
 					<%= image_tag "delete.png", class: "delete" %>
 				<% end %>
 			</li>

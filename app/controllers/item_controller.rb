@@ -20,11 +20,7 @@ class ItemController < ApplicationController
 		@item = Item.find params[:id]
 		@item.destroy
 
-		respond_to do |format|
-     		format.html { redirect_to post_url }
-     		format.json { head :no_content }
-     		format.js
-   		end
+		redirect_to root_path
 	end	
 
 	private
